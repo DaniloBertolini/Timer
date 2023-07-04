@@ -1,0 +1,17 @@
+.display {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+
+.timer {
+    border: 1px solid blue;
+    font-size: 6rem;
+}
+
+.twoPoints {
+    font-size: 6rem;
+}
