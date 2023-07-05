@@ -6,7 +6,7 @@ type Type = {
 
 function Title({ title }: Type) {
   return (
-    <header className={ styles.titulo }>{title}</header>
+    <h1 className={ styles.titulo }>{title}</h1>
   )
 }
 

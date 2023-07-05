@@ -90,7 +90,7 @@ function Timer() {
         <div className={ styles.containerDisplay }>
           <Display minutes={ tempo.minutes } seconds={ tempo.seconds } />
         </div>
-  
+
         <div className={ styles.containerButton }>
             <Button 
             text='Start'
@@ -105,7 +105,7 @@ function Timer() {
               onClick={ resetTimer }
               />
         </div>
-  
+
         <div className={ styles.containerInput }>
           {!running && (
             <>
@@ -121,7 +121,7 @@ function Timer() {
           )}
         </div>
       </>
-    )
+  )
 }
 
 export default Timer

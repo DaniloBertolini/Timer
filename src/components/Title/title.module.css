@@ -1,5 +1,11 @@
 .titulo {
-    font-size: 5rem;
-    text-align: center;
+    font-size: 3rem;
     padding: 50px;
+    margin: 20px 0 30px 0;
+    color: #0D278E;
+    border-bottom: 1px solid transparent;
+}
+
+.titulo:hover {
+    border-color: black;
 }
