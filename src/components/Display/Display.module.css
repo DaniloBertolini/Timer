@@ -1,5 +1,4 @@
 .display {
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,11 +6,18 @@
     width: 500px;
 }
 
+.display section {
+    display: flex;
+}
+
+.timer, .twoPoints {
+    font-size: 12rem;
+    color: #0D278E;
+    text-shadow: 1px 1px 3px white;
+}
+
 .timer {
-    border: 1px solid blue;
-    font-size: 6rem;
 }
 
 .twoPoints {
-    font-size: 6rem;
 }

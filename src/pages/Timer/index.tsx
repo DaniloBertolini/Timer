@@ -92,18 +92,18 @@ function Timer() {
         </div>
 
         <div className={ styles.containerButton }>
-            <Button 
-            text='Start'
-            onClick={ activateTimer }
-            />
-              <Button 
-              text='Stop'
-              onClick={ deactivateTimer }
-              />
-              <Button 
-              text='Reset'
-              onClick={ resetTimer }
-              />
+          <Button 
+          text='Start'
+          onClick={ activateTimer }
+          />
+          <Button 
+          text='Stop'
+          onClick={ deactivateTimer }
+          />
+          <Button 
+          text='Reset'
+          onClick={ resetTimer }
+          />
         </div>
 
         <div className={ styles.containerInput }>

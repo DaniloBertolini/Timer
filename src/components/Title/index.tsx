@@ -10,4 +10,4 @@ function Title({ title }: Type) {
   )
 }
 
-export default Title
+// export default Title
