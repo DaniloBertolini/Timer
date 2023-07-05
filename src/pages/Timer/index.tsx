@@ -62,6 +62,7 @@ function Timer() {
       clearInterval(intervalId)
       setIntervalId(null)
     }
+    setRunning(false)
   }
   
   const resetTimer = () => {
@@ -95,6 +96,7 @@ function Timer() {
           <Button 
           text='Start'
           onClick={ activateTimer }
+          disabled={ running }
           />
           <Button 
           text='Stop'

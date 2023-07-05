@@ -1,4 +1,4 @@
-import styles from './Display.module.css'
+import { Span, DivDisplay } from './Display';
 
 type Type = {
   seconds: number,
@@ -8,29 +8,23 @@ type Type = {
 function Display({ seconds, minutes}: Type) {
 
   return (
-    <div className={ styles.display }>
-      <section>
+    <DivDisplay>
+      <Span>
+        {!minutes && '00'}
+        {(minutes < 10 && minutes > 0) && '0' + minutes}
+        {minutes > 9 && minutes}
+      </Span>
 
-        <div className={ styles.timer }>
-          <span className={ styles.minutes }>
-            {!minutes && '00'}
-            {(minutes < 10 && minutes > 0) && '0' + minutes}
-            {minutes > 9 && minutes}
-          </span>
-        </div>
+      <Span>
+        :
+      </Span>
 
-        <span className={ styles.twoPoints }>:</span>
-
-        <div className={ styles.timer }>
-          <span className={ styles.seconds }>
-            {!seconds && '00'}
-            {(seconds < 10 && seconds > 0) && '0' + seconds}
-            {seconds > 9 && seconds}
-          </span>
-        </div>
-
-      </section>
-    </div>
+      <Span>
+        {!seconds && '00'}
+        {(seconds < 10 && seconds > 0) && '0' + seconds}
+        {seconds > 9 && seconds}
+      </Span>
+    </DivDisplay>
   )
 }
 
