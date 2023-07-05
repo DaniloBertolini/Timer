@@ -6,11 +6,6 @@ import Layout from './components/Layout';
 import Stopwatch from './pages/Stopwatch';
 import NotFound from './pages/NotFound';
 
-const timerInicial = {
-  minutes: 0,
-  seconds: 0
-}
-
 function App() {
 
   return (
