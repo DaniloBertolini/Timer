@@ -1,0 +1,15 @@
+.containerButton {
+    display: flex;
+    justify-content: center;
+}
+
+.containerInput {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.containerDisplay {
+    display: flex;
+    justify-content: center;
+}
