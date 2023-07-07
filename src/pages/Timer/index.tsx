@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import Display from "../../components/Display";
-import Button from "../../components/Button";
+import { Button } from '../../components/Button/button';
 import Input from "../../components/Input";
 
 import styles from './Timer.module.css'
@@ -94,18 +94,24 @@ function Timer() {
 
         <div className={ styles.containerButton }>
           <Button 
-          text='Start'
+          // text='Start'
           onClick={ activateTimer }
           disabled={ running }
-          />
+          >
+            Start
+          </Button>
           <Button 
-          text='Stop'
+          // text='Stop'
           onClick={ deactivateTimer }
-          />
+          >
+            Stop
+          </Button>
           <Button 
-          text='Reset'
+          // text='Reset'
           onClick={ resetTimer }
-          />
+          >
+            Reset
+          </Button>
         </div>
 
         <div className={ styles.containerInput }>

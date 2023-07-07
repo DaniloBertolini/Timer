@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Button from "../../components/Button"
+import { Button } from "../../components/Button/button";
 
 import styles from './Stopwatch.module.css'
 import DisplayStopwatch from "../../components/DisplayStopwatch";
@@ -70,21 +70,22 @@ function Stopwatch() {
       />
     </div>
     <div className={ styles.containerButton }>
-      {!running ? (
-        <Button 
-        text='Start'
-        onClick={ activateTimer }
-        />
-      ) : (
-        <Button 
-        text='Stop'
-        onClick={ deactivateTimer }
-        />
-      )}
       <Button 
-      text='Reset'
+      onClick={ activateTimer }
+      disabled={ running }
+      >
+        Start
+      </Button>
+      <Button 
+      onClick={ deactivateTimer }
+      >
+        Stop
+      </Button>
+      <Button 
       onClick={ resetTimer }
-      />
+      >
+        Reset
+      </Button>
       </div>
       </>
     )
