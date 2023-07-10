@@ -14,10 +14,10 @@ function NavBar({ onClick }: Type) {
           <a href="https://danilobertolini.github.io/DB-Games/" className={ styles.navbarA }>
           <House size={32} color="#fff" />
         </a>
-        <NavLink className={ styles.timer } to='/'>
+        <NavLink className={ styles.timer } to='/Timer'>
             <Title>Timer</Title>
         </NavLink>
-        <NavLink className={ styles.stopwatch } to='/stopwatch'>
+        <NavLink className={ styles.stopwatch } to='/Timer/stopwatch'>
             <Title>Stopwatch</Title>
         </NavLink>
         <button className={ styles.buttonColor } onClick={ onClick } >

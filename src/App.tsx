@@ -12,11 +12,10 @@ function App() {
     <>
       <GlobalStyle />
       <Routes>
-        <Route path='/' element={ <Layout /> }>
-          <Route path='/' element={ <Timer /> } />
-          <Route path='/stopwatch' element={ <Stopwatch /> } />
+        <Route path='/Timer' element={ <Layout /> }>
+          <Route path='/Timer' element={ <Timer /> } />
+          <Route path='/Timer/stopwatch' element={ <Stopwatch /> } />
         </Route>
-        <Route path="*" element={ <NotFound /> } />
       </Routes>
     </>
   )
