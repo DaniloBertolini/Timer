@@ -4,7 +4,6 @@ import Timer from './pages/Timer';
 import GlobalStyle from './styles/globalReset';
 import Layout from './components/Layout';
 import Stopwatch from './pages/Stopwatch';
-import NotFound from './pages/NotFound';
 
 function App() {
 
