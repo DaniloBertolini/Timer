@@ -1,7 +1,6 @@
+import { House, Palette } from "@phosphor-icons/react";
 import { NavLink } from "react-router-dom"
-// import Title from "../Title"
 import { Title } from "../Title/title";
-
 import styles from './NavBar.module.css'
 
 type Type = {
@@ -12,16 +11,17 @@ function NavBar({ onClick }: Type) {
 
   return (
     <nav className={ styles.nav }>
+          <a href="https://danilobertolini.github.io/DB-Games/" className={ styles.navbarA }>
+          <House size={32} color="#fff" />
+        </a>
         <NavLink className={ styles.timer } to='/'>
-            {/* <Title title="Timer"/> */}
             <Title>Timer</Title>
         </NavLink>
         <NavLink className={ styles.stopwatch } to='/stopwatch'>
-            {/* <Title title="Stopwatch"/> */}
             <Title>Stopwatch</Title>
         </NavLink>
-        <button onClick={ onClick }>
-          Cor
+        <button className={ styles.buttonColor } onClick={ onClick } >
+          <Palette size={32} color="#fff" />
         </button>
     </nav>
   )

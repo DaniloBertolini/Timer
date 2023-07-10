@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import Display from "../../components/Display";
 import { Button } from '../../components/Button/button';
-import Input from "../../components/Input";
+import { Input } from '../../components/Input/Input';
 
 import styles from './Timer.module.css'
 
