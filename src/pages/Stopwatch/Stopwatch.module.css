@@ -1,0 +1,9 @@
+.containerButton {
+    display: flex;
+    justify-content: center;
+}
+
+.containerDisplay {
+    display: flex;
+    justify-content: center;
+}

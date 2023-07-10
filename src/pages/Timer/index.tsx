@@ -94,20 +94,17 @@ function Timer() {
 
         <div className={ styles.containerButton }>
           <Button 
-          // text='Start'
           onClick={ activateTimer }
           disabled={ running }
           >
             Start
           </Button>
           <Button 
-          // text='Stop'
           onClick={ deactivateTimer }
           >
             Stop
           </Button>
           <Button 
-          // text='Reset'
           onClick={ resetTimer }
           >
             Reset
