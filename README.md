@@ -1,4 +1,4 @@
-# ⏰ [Timer & StopWatch](https://danilobertolini.github.io/Timer)
+# [Temporizador & Cronômetro](https://danilobertolini.github.io/Timer)
 
 Uma apliacação para gerenciar algum tempo/intervalo, através de um Temporizador ou um Cronômetro.
 
