@@ -1,4 +1,4 @@
-# ⏰ [Timer & StopWatch]([https://timer.hiagoisoppo.vercel.app](https://danilobertolini.github.io/Timer))
+# ⏰ [Timer & StopWatch](https://danilobertolini.github.io/Timer)
 
 Uma apliacação para gerenciar algum tempo/intervalo, através de um Temporizador ou um Cronômetro.
 
@@ -12,7 +12,7 @@ Uma apliacação para gerenciar algum tempo/intervalo, através de um Temporizad
 - [REACT ROUTER](https://reactrouter.com/en/main)
 
 ## Como acessar
-  Pode aceesar através desse [deploy](https://timer.hiagoisoppo.vercel.app), ou se preferir na máquina local, pode seguir abaixo.
+  Pode aceesar através desse [deploy](https://danilobertolini.github.io/Timer/), ou se preferir na máquina local, pode seguir abaixo.
   - Abra o terminal e faça o clone.
   ```bash
     git clone git@github.com:DaniloBertolini/Timer.git
