@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import sound from '../../assets/marioWinner.mp3'
 
 import Display from "../../components/Display";
 import { Button } from '../../components/Button/button';
@@ -15,6 +16,10 @@ function Timer() {
   const [tempo, setTempo] = useState(timerInicial)
   const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
   const [running, setRunning] = useState(false)
+
+  const play = () => {
+    new Audio(sound).play()
+  }
   
   const changeTimer = (event: React.ChangeEvent<HTMLInputElement> ) => {
   
@@ -23,6 +28,11 @@ function Timer() {
         setTempo({
           ...tempo,
           minutes: 59,
+        })
+      } else if (!parseInt(event.target.value)) {
+        setTempo({
+          ...tempo,
+          minutes: 0,
         })
       } else {
         setTempo({
@@ -36,6 +46,11 @@ function Timer() {
           ...tempo,
           seconds: 59,
         })
+      } else if (!parseInt(event.target.value)) {
+        setTempo({
+          ...tempo,
+          seconds: 0,
+        })
       } else {
         setTempo({
           ...tempo,
@@ -44,7 +59,7 @@ function Timer() {
       }
     }
   }
-  
+
   const activateTimer = () => {
     const on = setInterval(() => {        
       setTempo((prevTimer) => ({
@@ -69,7 +84,7 @@ function Timer() {
     setTempo(timerInicial)
     setRunning(false)
   }
-  
+
   useEffect(() => {
     if (intervalId) {
       if (tempo.seconds === -1) {
@@ -83,6 +98,7 @@ function Timer() {
         clearInterval(intervalId)
         setIntervalId(null)
         setRunning(false)
+        play()
       }
     }
   }, [tempo, intervalId])
