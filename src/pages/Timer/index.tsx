@@ -1,5 +1,10 @@
 import { useState, useEffect } from 'react';
-import sound from '../../assets/marioWinner.mp3'
+import marioWinner from '../../assets/marioWinner.mp3'
+import comecoufds from '../../assets/comecoufds.mp3'
+import daledaleBackend from '../../assets/daledale-backend.mp3'
+import quartou from '../../assets/Quartou.mp3'
+import segundaespecial from '../../assets/segundaespecial.mp3'
+import tururu from '../../assets/tururu.mp3'
 
 import Display from "../../components/Display";
 import { Button } from '../../components/Button/button';
@@ -17,8 +22,13 @@ function Timer() {
   const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
   const [running, setRunning] = useState(false)
 
+  const audios = [marioWinner, comecoufds, daledaleBackend, quartou, segundaespecial, tururu]
+
   const play = () => {
-    new Audio(sound).play()
+    
+    const random = Math.floor(Math.random() * 6)
+    const audio = new Audio(audios[random])
+    audio.play()
   }
   
   const changeTimer = (event: React.ChangeEvent<HTMLInputElement> ) => {
