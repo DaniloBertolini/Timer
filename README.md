@@ -12,7 +12,7 @@ Uma aplicação para gerenciar um tempo/intervalo, através de um Temporizador o
 - [REACT ROUTER](https://reactrouter.com/en/main)
 
 ## Como acessar
-  Pode aceesar através desse [deploy](https://danilobertolini.github.io/Timer/), ou se preferir na máquina local, pode seguir abaixo.
+  Pode acessar através desse [deploy](https://danilobertolini.github.io/Timer/), ou se preferir na máquina local, pode seguir abaixo.
   - Abra o terminal e faça o clone.
   ```bash
     git clone git@github.com:DaniloBertolini/Timer.git
