@@ -1,8 +1,8 @@
-# [Temporizador & Cronômetro](https://danilobertolini.github.io/Timer)
+# :timer_clock: [Temporizador & Cronômetro](https://danilobertolini.github.io/Timer)
 
 Uma aplicação para gerenciar um tempo/intervalo, através de um Temporizador ou um Cronômetro.
 
-## Tecnologias
+## :bomb: Tecnologias
 
 - [REACT](https://react.dev/)
 - [VITE](https://vitejs.dev/)
@@ -11,7 +11,7 @@ Uma aplicação para gerenciar um tempo/intervalo, através de um Temporizador o
 - [TYPESCRIPT](https://www.typescriptlang.org/)
 - [REACT ROUTER](https://reactrouter.com/en/main)
 
-## Como acessar
+## :books: Como acessar
   Pode acessar através desse [deploy](https://danilobertolini.github.io/Timer/), ou se preferir na máquina local, pode seguir abaixo.
   - Abra o terminal e faça o clone.
   ```bash
